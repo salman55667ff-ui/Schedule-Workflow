@@ -1,0 +1,13 @@
+name: Scheduled GitHub Action
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Greetings
+        run: echo "Hello from Salman Sami!"
